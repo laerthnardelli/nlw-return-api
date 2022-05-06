@@ -25,4 +25,14 @@ describe("Submit feedback", () => {
       })
     ).rejects.toThrow();
   });
+
+  it("should not be able to submit feedback without comment", async () => {
+    await expect(
+      submitFeedback.execute({
+        type: "BUG",
+        comment: "",
+        screenshot: "data:image/png;base64,jsdjh23Laerthck9ww9d9",
+      })
+    ).rejects.toThrow();
+  });
 });
