@@ -10,9 +10,19 @@ describe("Submit feedback", () => {
     await expect(
       submitFeedback.execute({
         type: "BUG",
-        comment: "exemple comment",
+        comment: "example comment",
         screenshot: "data:image/png;base64,jsdjh23Laerthck9ww9d9",
       })
     ).resolves.not.toThrow();
+  });
+
+  it("should not be able to submit feedback without type", async () => {
+    await expect(
+      submitFeedback.execute({
+        type: "",
+        comment: "example comment",
+        screenshot: "data:image/png;base64,jsdjh23Laerthck9ww9d9",
+      })
+    ).rejects.toThrow();
   });
 });
