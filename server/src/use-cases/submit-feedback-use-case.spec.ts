@@ -1,8 +1,12 @@
 import { SubmitFeedbackUseCase } from "./submit-feedback-use-case";
 
+// spies - has as porpose to check if a function has been called
+const createFeedbackSpy = jest.fn();
+const sendMailSpy = jest.fn();
+
 const submitFeedback = new SubmitFeedbackUseCase(
-  { create: async () => {} },
-  { sendMail: async () => {} }
+  { create: createFeedbackSpy },
+  { sendMail: sendMailSpy }
 );
 
 describe("Submit feedback", () => {
@@ -14,6 +18,8 @@ describe("Submit feedback", () => {
         screenshot: "data:image/png;base64,jsdjh23Laerthck9ww9d9",
       })
     ).resolves.not.toThrow();
+    expect(createFeedbackSpy).toHaveBeenCalled();
+    expect(sendMailSpy).toHaveBeenCalled();
   });
 
   it("should not be able to submit feedback without type", async () => {
