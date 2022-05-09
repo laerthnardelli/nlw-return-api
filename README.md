@@ -33,11 +33,14 @@ Tecnologias Utilizadas:
 ![feedback 07 - server running e feedback enviado](https://user-images.githubusercontent.com/54412289/167512788-9d99a885-831d-441b-99f7-bf5056487c7c.png) <br/>
 * npx prisma studio (visualizar os feedback enviados)<br/>
 ![feedback 06 - prisma-studio](https://user-images.githubusercontent.com/54412289/167512833-86417a6f-b1f2-4fc6-a638-4bc3c985472a.png)<br/><br/>
+* npm run test (executar test com jest)<br>
+![feedback 08 - test-jest](https://user-images.githubusercontent.com/54412289/167513742-585b60c2-5207-455a-8154-00f141e55792.png)<br/>
 
 
-Obs: caso queira, testar local, trocar em server/prisma/schema.prisma o tipo de bando de dados para provider = "sqlite" e exeuctar as migrations com o seguinte comando "npx prisma migrate dev" <br/>
+Obs1: caso queira, executar api local, trocar em server/prisma/schema.prisma o tipo de bando de dados para provider = "sqlite" e exeuctar as migrations com o seguinte comando "npx prisma migrate dev" <br/>
 ![feedback 05 - schema-prisma](https://user-images.githubusercontent.com/54412289/167510418-e367e906-79dc-4279-903e-d9fb4b0ab3f9.png)
 
+obs2: caso queira fazer o deploy, converter os arquivos de TS para JS com seguinte comando: npx tsc <br/>
 
 https://github.com/laerthnardelli/nlw-return-web<br/>
 https://github.com/laerthnardelli/nlw-return-mobile
