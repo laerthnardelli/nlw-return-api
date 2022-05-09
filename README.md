@@ -21,7 +21,7 @@ Tecnologias Utilizadas:
 
 ![feedback 02 - Mailtrap](https://user-images.githubusercontent.com/54412289/167509722-c4f85921-acbc-477c-adaa-0808897e4579.png)<br/>
 
-#Iniciar Servidor:
+##Iniciar Servidor:
 * cd server
 * Criar uma conta projeto em  **[@Mailtrap](https://https://mailtrap.io/)**
 * Pegar a config necessária dos dados do projeto (user e password) para ser feito a integração com backend<br/>
