@@ -14,12 +14,9 @@ Tecnologias Utilizadas:
 * Postgresql
 * Express
 * Axios
-* Nodemailer (serviiço de envio de email).
-* Mailtrap (envio de e-mail).
-
-Deploy do backend no @Heroku e frontend na @Vercel.
-
-link do deploy na vercel: https://nlw-return-web-git-main-laerthnardelli.vercel.app/
+* Nodemailer (serviço de envio de email).
+* Mailtrap (serviço sandbox de-mail).
+* **[@Heroku](https://https://heroku.com/)** utilizado para deploy
 
 Iniciar Servidor:
 * cd server
@@ -29,3 +26,8 @@ Iniciar Servidor:
 * Alterar user e pass do mailtrap em src/adapters/nodemailer/nodemailer-mail-adapter.ts
 * npm run dev
 * npx prisma studio
+*
+Obs: caso queira, testar local, trocar em /prisma/schema.prisma o tipo de bando de dados para provider = "sqlite" e exeuctar as migrations "npx prisma migrate dev"
+
+https://github.com/laerthnardelli/nlw-return-web
+https://github.com/laerthnardelli/nlw-return-mobile
