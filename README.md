@@ -22,12 +22,14 @@ Iniciar Servidor:
 * cd server
 * Criar uma conta projeto em  **[@Mailtrap](https://https://mailtrap.io/)**
 * Pegar a config necessária dos dados do projeto (user e password) para ser feito a integração com backend
-![feedback 05 - config integration mailtrap](https://user-images.githubusercontent.com/54412289/167466110-b4ee7739-c38e-4cdc-bdf6-5cb64986f28b.png)
+![feedback 01 - config integration mailtrap](https://user-images.githubusercontent.com/54412289/167509680-7a502b88-731e-4f0a-a116-91a63633159e.png)
 * Alterar user e pass do mailtrap em src/adapters/nodemailer/nodemailer-mail-adapter.ts
 * npm run dev
 * npx prisma studio
 *
-Obs: caso queira, testar local, trocar em /prisma/schema.prisma o tipo de bando de dados para provider = "sqlite" e exeuctar as migrations "npx prisma migrate dev"
+Obs: caso queira, testar local, trocar em server/prisma/schema.prisma o tipo de bando de dados para provider = "sqlite" e exeuctar as migrations com o seguinte comando "npx prisma migrate dev"
+
+![feedback 02 - Mailtrap](https://user-images.githubusercontent.com/54412289/167509722-c4f85921-acbc-477c-adaa-0808897e4579.png)
 
 https://github.com/laerthnardelli/nlw-return-web
 https://github.com/laerthnardelli/nlw-return-mobile
