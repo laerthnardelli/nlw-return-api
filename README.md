@@ -42,5 +42,5 @@ obs1: caso queira, executar api local, trocar em server/prisma/schema.prisma o t
 
 obs2: caso queira fazer o deploy, converter os arquivos de TS para JS com seguinte comando: npx tsc <br/>
 
-https://github.com/laerthnardelli/nlw-return-web<br/>
-https://github.com/laerthnardelli/nlw-return-mobile
+repositório frontend web: https://github.com/laerthnardelli/nlw-return-web<br/>
+repositório frontend mobile: https://github.com/laerthnardelli/nlw-return-mobile <br/>
