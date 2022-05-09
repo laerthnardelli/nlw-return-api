@@ -26,6 +26,6 @@ Iniciar Servidor:
 * Criar uma conta projeto em  **[@Mailtrap](https://https://mailtrap.io/)**
 * Pegar a config necessária dos dados do projeto (user e password) para ser feito a integração com backend
 ![feedback 05 - config integration mailtrap](https://user-images.githubusercontent.com/54412289/167466110-b4ee7739-c38e-4cdc-bdf6-5cb64986f28b.png)
-* Alterar user e pass do mailtrap em src/lib/api para seu ipv4 src/adapters/nodemailer/nodemailer-mail-adapter.ts
+* Alterar user e pass do mailtrap em src/adapters/nodemailer/nodemailer-mail-adapter.ts
 * npm run dev
 * npx prisma studio
